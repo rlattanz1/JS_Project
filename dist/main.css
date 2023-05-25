@@ -1,0 +1,22 @@
+/*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*************************************************************************************************************************************/
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  font-family: fantasy;
+}
+
+#map-container {
+  display: flex;
+  justify-content: center;
+}
+
+path:hover {
+  fill: aqua !important;
+  cursor: pointer;
+  transform: scale(1.003, 1.003);
+}
+
