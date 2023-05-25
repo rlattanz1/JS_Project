@@ -22,7 +22,14 @@ Wireframe
 ReadMe.md image inclusion: ![screenshot](./ReadMe_Wireframe/Screenshot.png)
 
 
-
-
 Technologies, Libraries, APIs
-an API to fetch data. Hopefully!
+an API to fetch data. Hopefully! Otherwise I will be seeding it myself or pivoting to a bird watching app with the same UI.
+
+Timeline {
+    day 1: get a gameplan and final proposal and talk to Chris to raise my moral and expunge my fears
+    day 2: get a clickable map on my page with all the right hover funcitons for the map and get a music button in my html and also have a clickable event listener with a toggle function.
+    day 3: start to get the API information or seeded information together and start to work on the AJAX logic for it and getting it working.
+    day 4: style the shit out of my application page and make it look pretty
+    day 5: make sure there are no bugs and check for the proper functionality with no issues
+    day 6: Hopefully submit a cmpleted or mostly completed project!
+}
