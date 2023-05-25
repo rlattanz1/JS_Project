@@ -20,3 +20,10 @@ path:hover {
   transform: scale(1.003, 1.003);
 }
 
+path:hover {
+  display: block;
+  color: black
+}
+path {
+  font-size: 12px;
+}

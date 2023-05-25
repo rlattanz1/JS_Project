@@ -12,11 +12,12 @@ In "From The Farm To Your Table", users will be able to:
 -get seasonal produce information based on the time of year and location
 -a music on and off toggle button for the seasonal music
 -an aesthetic backroung basesd on the season
+-idk something else if I am creative enough to come up with something
 In addition, this project will include:
 
 { 2-4 other aspects of your project, including instructions & README }
 -click on the states to provide a location for the search
--
+-it will look pretty and have music hopefully!
 
 Wireframe
 ReadMe.md image inclusion: ![screenshot](./ReadMe_Wireframe/Screenshot.png)
