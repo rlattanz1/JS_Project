@@ -11,6 +11,10 @@ class Map {
     handleClick(e) {
         // let ele = e.target.getElementByClassName("state")
     }
+
+    selectData() {
+        
+    }
 }
 
 export default Map;
