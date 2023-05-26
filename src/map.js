@@ -1,5 +1,5 @@
 
-class Map {
+class CountryMap {
 
     constructor(container) {
         this.container = container
@@ -12,7 +12,13 @@ class Map {
     handleClick(e) {
         e.preventDefault();
 
-        console.log(this.container, 'handleClick')
+        let stateId = e.target.id;
+        // if (stateId === ) {
+
+        // } else {
+
+        // }
+
     }
 
     // selectData() {
@@ -20,4 +26,4 @@ class Map {
     // }
 }
 
-export default Map;
+export default CountryMap;
