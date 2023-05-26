@@ -27,8 +27,6 @@ const seasonalItems = {
         Alabama: 'Squash',
         Alabama: 'Tomatoes',
         Alabama: 'Watermelons',
-        
-
     },
     Winter: {
         Alabama: 'Citrus',
@@ -39,8 +37,6 @@ const seasonalItems = {
         Alabama: 'Sweet Potatoes',
         Alabama: 'Rutabaga',
         Alabama: 'Squash',
-
-
     },
     Spring: {
         Alabama: 'Beans',
@@ -63,7 +59,6 @@ const seasonalItems = {
         Alabama: 'Spinach',
         Alabama: 'Squash',
         Alabama: 'Strawberries',
-
     },
     Summer: {
         Alabama: 'Apples',
@@ -95,6 +90,5 @@ const seasonalItems = {
         Alabama: 'Strawberries',
         Alabama: 'Tomatoes',
         Alabama: 'Watermelons',
-
-    },
+    }
 };

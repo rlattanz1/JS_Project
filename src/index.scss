@@ -1,1 +1,68 @@
 
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-family: fantasy;
+    color:black;
+  }
+
+  #map-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  path:hover {
+    fill: aqua !important;
+    cursor: pointer;
+    transform: scale(1.003, 1.003);
+
+  }
+
+
+  path:hover span #state-name {
+    display: block !important;
+    font-size: 12px;
+  }
+
+
+  .season-filter {
+    display: flex;
+    justify-content: center;
+  }
+
+  #winter {
+    background-color: blue;
+    color: white;
+  }
+
+  #fall {
+    background-color: coral;
+    color:brown;
+  }
+
+  #spring {
+    background-color: darkseagreen;
+    color: gold;
+  }
+
+  #summer {
+    background-color: gold;
+    color:crimson;
+  }
+
+  .music {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  #music-toggle {
+    background-color: blueviolet;
+    color: azure;
+  }
+
+  body {
+    background-image: url(https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80);
+    background-size: 100%;
+  }
