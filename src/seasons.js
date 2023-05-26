@@ -1,32 +1,28 @@
+import seasonalItems from "./seasonal_items";
 
+class Season {
 
-class Seasons {
+    constructor(filter, _itemsSeason) {
+        this.filter = filter;
+        this.itemsSeason = seasonalItems;
+        this.filteredItems = this.itemsSeason[filter]
+        this.filter.addEventListener("click", this.seasonFilter.bind(this));
 
-    constructor(filter) {
-        this.filter = filter
-
-        this.filter.addEventListener("click", this.SeasonFilter.bind(this))
-    }
-
-
-    SeasonFilter(e) {
-
-        e.preventDefault();
-        console.log(e, "event")
-
-        let filterId = e.target.id;
-        console.log(filterId, "filterId")
-        // if (content === 'Fall') {
-
-        // } else {
-
-        // }
     };
 
-    //async filterData() {
-        
-    // }
+
+    seasonFilter(e) {
+        e.preventDefault();
+
+        let seasonId = e.target.id;
+        const seasonFilter = this.itemsSeason[seasonId];
+
+        this.filteredItems = seasonFilter;
+        console.log(seasonId, "filterId")
+        console.log(this.filteredItems, "season")
+        return this.filteredItems;
+    };
 };
 
 
-    export default Seasons;
+    export default Season;

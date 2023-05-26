@@ -28,26 +28,39 @@ path:hover span #state-name {
 .season-filter {
   display: flex;
   justify-content: center;
+  justify-content: space-around;
 }
 
-#winter {
+#Winter {
   background-color: blue;
   color: white;
+  border-radius: 2em;
+  cursor: pointer;
 }
 
-#fall {
+#Winter:hover {
+  transform: scale(1.05, 1.05);
+}
+
+#Fall {
   background-color: coral;
   color: brown;
+  border-radius: 2em;
+  cursor: pointer;
 }
 
-#spring {
+#Spring {
   background-color: darkseagreen;
   color: gold;
+  border-radius: 2em;
+  cursor: pointer;
 }
 
-#summer {
+#Summer {
   background-color: gold;
   color: crimson;
+  border-radius: 2em;
+  cursor: pointer;
 }
 
 .music {
@@ -59,6 +72,8 @@ path:hover span #state-name {
 #music-toggle {
   background-color: blueviolet;
   color: azure;
+  border-radius: 2em;
+  cursor: pointer;
 }
 
 body {

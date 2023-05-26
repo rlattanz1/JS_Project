@@ -10,9 +10,9 @@ class Music {
     toggleMusic(e) {
 
         e.preventDefault();
+        let musicId = e.target.id
+        console.log(musicId, "music ID")
 
-        console.log(e, "event")
-        
     };
 
 

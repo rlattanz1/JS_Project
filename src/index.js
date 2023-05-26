@@ -1,7 +1,7 @@
 import CountryMap from "./map";
-import Seasons from "./seasons";
-// import Music from "./music";
-// import seasonalItems from "./seasonal_items";
+import Season from "./seasons";
+import Music from "./music";
+import seasonalItems from "./seasonal_items";
 
 
 
@@ -9,10 +9,10 @@ import Seasons from "./seasons";
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("map-container");
     const filter = document.getElementsByClassName("season-filter")[0];
-    // const song = document.getElementById("music-toggle")
-    // const items = seasonalItems[filter[stateId]]
-    // const music = new Music(song)
-    const season = new Seasons(filter);
-    const map = new CountryMap(container);
+    const song = document.getElementById("music-toggle");
+    const itemsSeason = seasonalItems; // should this be defined here or just in my seasons class
+    const music = new Music(song);
+    const season = new Season(filter, itemsSeason);
+    const map = new CountryMap(container, filter, season);
 
 });
