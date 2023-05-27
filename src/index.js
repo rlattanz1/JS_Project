@@ -13,6 +13,5 @@ document.addEventListener("DOMContentLoaded", () => {
     const itemsSeason = seasonalItems; // should this be defined here or just in my seasons class
     const music = new Music(song);
     const season = new Season(filter, itemsSeason);
-    const map = new CountryMap(container, filter, season);
-
+    const map = new CountryMap(container, season);
 });

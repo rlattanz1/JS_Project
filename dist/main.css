@@ -49,11 +49,19 @@ path:hover span #state-name {
   cursor: pointer;
 }
 
+#Fall:hover {
+  transform: scale(1.05, 1.05);
+}
+
 #Spring {
   background-color: darkseagreen;
   color: gold;
   border-radius: 2em;
   cursor: pointer;
+}
+
+#Spring:hover {
+  transform: scale(1.05, 1.05);
 }
 
 #Summer {
@@ -63,7 +71,12 @@ path:hover span #state-name {
   cursor: pointer;
 }
 
+#Summer:hover {
+  transform: scale(1.05, 1.05);
+}
+
 .music {
+  padding: 5px;
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -74,6 +87,10 @@ path:hover span #state-name {
   color: azure;
   border-radius: 2em;
   cursor: pointer;
+}
+
+#music-toggle:hover {
+  transform: scale(1.05, 1.05);
 }
 
 body {

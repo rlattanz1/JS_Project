@@ -5,9 +5,8 @@ class Season {
     constructor(filter, _itemsSeason) {
         this.filter = filter;
         this.itemsSeason = seasonalItems;
-        this.filteredItems = this.itemsSeason[filter]
+        this.filteredItems = this.itemsSeason
         this.filter.addEventListener("click", this.seasonFilter.bind(this));
-
     };
 
 
@@ -16,10 +15,7 @@ class Season {
 
         let seasonId = e.target.id;
         const seasonFilter = this.itemsSeason[seasonId];
-
         this.filteredItems = seasonFilter;
-        console.log(seasonId, "filterId")
-        console.log(this.filteredItems, "season")
         return this.filteredItems;
     };
 };

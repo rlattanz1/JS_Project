@@ -37,7 +37,6 @@ h1 {
     color: white;
     border-radius: 2em;
     cursor: pointer;
-
   }
 
   #Winter:hover {
@@ -49,7 +48,10 @@ h1 {
     color:brown;
     border-radius: 2em;
     cursor: pointer;
+  }
 
+  #Fall:hover {
+    transform: scale(1.05, 1.05);
   }
 
   #Spring {
@@ -57,7 +59,9 @@ h1 {
     color: gold;
     border-radius: 2em;
     cursor: pointer;
-
+  }
+  #Spring:hover {
+    transform: scale(1.05, 1.05);
   }
 
   #Summer {
@@ -65,10 +69,14 @@ h1 {
     color:crimson;
     border-radius: 2em;
     cursor: pointer;
+  }
+  #Summer:hover {
+    transform: scale(1.05, 1.05);
 
   }
 
   .music {
+    padding: 5px;
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -79,7 +87,9 @@ h1 {
     color: azure;
     border-radius: 2em;
     cursor: pointer;
-
+  }
+  #music-toggle:hover {
+    transform: scale(1.05, 1.05);
   }
 
   body {

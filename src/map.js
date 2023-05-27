@@ -1,4 +1,4 @@
-import Season from "./seasons";
+// import Season from "./seasons";
 // import seasonalItems from "./seasonal_items";
 
 class CountryMap{
@@ -7,22 +7,29 @@ class CountryMap{
         this.season = season;
         this.container = container;
         this.container.addEventListener("click", this.handleClick.bind(this))
-    }
+    };
 
     handleClick(e) {
         e.preventDefault();
 
         let stateId = e.target.id;
-        let seasonEl = this.season.filteredItems
+        let seasonEl = this.season.filteredItems;
+
         // console.log(e, "event");
-        console.log(stateId, "state ID")
-        console.log(seasonEl, 'season filtered data')
-    //     if (this.season.filteredItems !== null) {
-    //             return this.season[stateId];
+        // console.log(stateId, "state ID")
+        console.log(seasonEl[stateId], 'season filtered data')
+    //     if (seasonEl) {
+    //         return seasonEl[stateId];
     //     } else {
-    //         throw new Error("Please Select A Season");
+    //         try {
+    //             throw new Error("Please select a season");
+    //         } catch {
+    //             return console.log(Error);
+    //         }
     //     }
-    } //catch(Error);
+    // error throwing is not working right
+
+    };
 
 }
 

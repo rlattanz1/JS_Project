@@ -132,7 +132,7 @@ const seasonalItems = {
         AK: {
             Beets: 'seasonal details',
             Carrots: 'seasonal details',
-            Pottatoes: 'seasonal details',
+            Potatoes: 'seasonal details',
             Rhubsrb: 'seasonal details',
             Tomatoes: 'seasonal details'},
         AZ: {
