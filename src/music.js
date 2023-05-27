@@ -11,6 +11,7 @@ class Music {
 
         e.preventDefault();
         let musicId = e.target.id
+        console.log(e, "event")
         console.log(musicId, "music ID")
 
     };

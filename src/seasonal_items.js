@@ -74,7 +74,13 @@ const seasonalItems = {
             Spinach: 'seasonal details',
             Squash: 'seasonal details',
             SweetCorn: 'seasonal details',
-            Tomatoes: 'seasonal details'}
+            Tomatoes: 'seasonal details'},
+        AR: {
+            Apples: 'seasonal details',
+            Apples: 'seasonal details',
+            Apples: 'seasonal details',
+            Apples: 'seasonal details',
+        }
     },
     Winter: {
         AL: {

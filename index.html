@@ -15,18 +15,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="src/styles/reset.css" />
     <link rel="stylesheet" href="./dist/main.css" />
-    <script src="./dist/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/2687a23fd5.js" crossorigin="anonymous"></script>
+    <script src="./dist/main.js"></script>
     <title>Farm To Table</title>
   </head>
 
   <body>
-
       <div class="music">
           <button id="music-toggle">Music on/off</button>
       </div>
 <h1>From The Farm To Your Table </h1>
 
-<!-- <span id="state-name"></span> -->
 
 <div class="season-filter">
     <button class="season" id="Fall">Fall</button>
@@ -35,7 +34,10 @@
     <button class="season" id="Summer">Summer</button>
 </div>
 <div id="map-container">
-
+    <div class="state-show">
+        <p class="current-state">Selected State</p>
+        <span id="state-name"></span>
+    </div>
 
     <svg
 xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -474,7 +476,10 @@ sodipodi:docname="us.svg">
     style="stroke-width:0.97063118000000004;fill:#f9f9f9" />
   </svg>
 </div>
-
-  </body>
+<div class="profile-links">
+    <a href="https://github.com/rlattanz1"><i class="fa-brands fa-github" style="color: #f00000;"></i></a>
+    <a href="https://www.linkedin.com/in/rocco-lattanzio-a8aba5a5/"><i class="fa-brands fa-linkedin" style="color: #a905f5;"></i></a>
+</div>
+</body>
 
 </html>

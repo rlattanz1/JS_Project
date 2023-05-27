@@ -15,3 +15,5 @@ document.addEventListener("DOMContentLoaded", () => {
     const season = new Season(filter, itemsSeason);
     const map = new CountryMap(container, season);
 });
+
+
