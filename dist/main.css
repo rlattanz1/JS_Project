@@ -158,3 +158,18 @@ body {
   height: cover;
   overflow: hidden;
 }
+
+#items {
+  display: flex;
+  justify-content: center;
+  margin-left: 450px;
+  margin-right: 450px;
+  background-color: aliceblue;
+  height: 100%;
+}
+
+#items-list {
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: auto;
+}

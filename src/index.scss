@@ -78,6 +78,7 @@ h1 {
     fill: aqua !important;
     cursor: pointer;
     transform: scale(1.003, 1.003);
+
   }
 
 
@@ -165,4 +166,22 @@ h1 {
     background-size: cover;
     height: cover;
     overflow: hidden;
+  }
+
+  #items {
+    display: flex;
+    justify-content: center;
+    margin-left: 450px;
+    margin-right: 450px;
+    background-color: aliceblue;
+    // overflow-y: scroll;
+    height: 100%;
+  }
+
+
+  //mabye implement a dropdown for this if time
+  #items-list {
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: auto;
   }

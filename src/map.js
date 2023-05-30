@@ -1,6 +1,7 @@
 // import Season from "./seasons";
 // import seasonalItems from "./seasonal_items";
 
+
 class CountryMap{
 
     constructor(container, season) {
@@ -24,16 +25,37 @@ class CountryMap{
 
     handleClick(e) {
         e.preventDefault();
-
         let stateId = e.target.id;
         let seasonEl = this.season.filteredItems;
-        console.log(seasonEl[stateId], 'season filtered data');
-        if (!seasonEl[stateId]) {
+        let stateEl = seasonEl[stateId];
+        // console.log(seasonEl[stateId], 'season filtered data');
+        if (!stateEl) {
             alert("Please select a season and a valid state");
-         } else {
-            return seasonEl[stateId];
+        } else {
+            let menu = document.getElementById("items-list");
+            menu.innerText = '';
+            const itemContainer = document.getElementById("items");
+
+            const elements = Object.keys(stateEl);
+            elements.forEach(key => {
+                let listEl = document.createElement("li");
+                let imgEl = document.createElement("img");
+                imgEl.src = stateEl[key][0];
+                imgEl.innerText = stateEl[key][1];
+                listEl.append(`${imgEl}`)
+                // listEl.append(`${product_desc}`);
+                menu.append(listEl)
+            })
+            console.log(menu);
+            if (itemContainer.style.display === 'flex') {
+                itemContainer.style.display = 'none';
+            } else {
+                itemContainer.style.display = 'flex';
+            };
+            return itemContainer;
         }
     };
+
 };
 
 export default CountryMap;

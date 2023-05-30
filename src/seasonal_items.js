@@ -446,11 +446,11 @@ const seasonalItems = {
             Tomatoes: 'seasonal details',
             Watermelons: 'seasonal details'},
         CA: {
-            Apricots: 'seasonal details',
-            Beets: 'seasonal details',
-            Blackberries: 'seasonal details',
-            BlackEyedPeas: 'seasonal details',
-            BokChoy: 'seasonal details'},
+            Apricots: ['https://snaped.fns.usda.gov/sites/default/files/styles/crop_ratio_7_5/public/seasonal-produce/2018-05/apricots.jpg?h=c8b8df1c&itok=PiYJ9sg1', 'seasonal details'],
+            Beets: ['https://snaped.fns.usda.gov/sites/default/files/styles/crop_ratio_7_5/public/seasonal-produce/2018-05/beets.jpg?h=c8b8df1c&itok=tJDWRZje', 'seasonal details'],
+            // Blackberries: [url, 'seasonal details'],
+            // BlackEyedPeas: [url, 'seasonal details'],
+            BokChoy: ['https://en.wikipedia.org/wiki/File:Bok_Choy_(49553125456).jpg', 'seasonal details']},
         CO: {
             Apricots: 'seasonal details',
             Arugula: 'seasonal details',
