@@ -10,14 +10,11 @@ class CountryMap{
         this.container.addEventListener("click", this.handleClick.bind(this));
     };
 
-
-    // works but need to fix its position to the path somehow
-
     handleMousover(e) {
         let stateName = document.getElementById('state-name');
         let stateEl = e.target.tagName;
         if (stateEl === 'path') {
-            let content = `${e.target.dataset.id}`;
+            let content = `${e.target.dataset.name}`;
             stateName.innerText = content;
         } else {
             let content = '';
@@ -25,28 +22,18 @@ class CountryMap{
         }
     }
 
-
     handleClick(e) {
         e.preventDefault();
 
         let stateId = e.target.id;
         let seasonEl = this.season.filteredItems;
-
-        // console.log(e, "event");
-        // console.log(stateId, "state ID")
-        // console.log(seasonEl[stateId], 'season filtered data');
-        if (!seasonEl) {
-            alert("Please select a season");
-        } else {
+        console.log(seasonEl[stateId], 'season filtered data');
+        if (!seasonEl[stateId]) {
+            alert("Please select a season and a valid state");
+         } else {
             return seasonEl[stateId];
-            // try {
-            //     throw new Error("Please select a season");
-            // } catch (error) {
-            //     console.error(error);
-            // }
         }
-    // error throwing is not working right
     };
-}
+};
 
 export default CountryMap;

@@ -7,8 +7,19 @@ h1 {
   font-size: 60px;
   font-family: fantasy;
   color: black;
+  background-image: linear-gradient(-225deg, #2700b6 0%, #6312ba 29%, #ff1361 67%, #fff800 100%);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 10s linear infinite;
 }
 
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
 .profile-links {
   display: flex;
   flex-direction: row;
@@ -25,11 +36,11 @@ h1 {
 }
 
 .fa-github:hover {
-  transform: scale(3.3, 3.3);
+  transform: scale(3.5, 3.5);
 }
 
 .fa-linkedin:hover {
-  transform: scale(3.3, 3.3);
+  transform: scale(3.5, 3.5);
 }
 
 .state-show {
@@ -51,6 +62,7 @@ h1 {
   color: black;
   font-size: 20px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-shadow: 2px 2px 2px rgb(101, 101, 101);
 }
 
 #map-container {
@@ -64,11 +76,6 @@ path:hover {
   transform: scale(1.003, 1.003);
 }
 
-path:hover span #state-name {
-  display: block !important;
-  font-size: 12px;
-}
-
 .season-filter {
   display: flex;
   justify-content: center;
@@ -80,10 +87,11 @@ path:hover span #state-name {
   color: white;
   border-radius: 2em;
   cursor: pointer;
+  font-family: cursive;
 }
 
 #Winter:hover {
-  transform: scale(1.05, 1.05);
+  transform: scale(1.1, 1.1);
   filter: drop-shadow(1px 1px 10px rgb(1, 1, 255));
 }
 
@@ -92,10 +100,11 @@ path:hover span #state-name {
   color: brown;
   border-radius: 2em;
   cursor: pointer;
+  font-family: cursive;
 }
 
 #Fall:hover {
-  transform: scale(1.05, 1.05);
+  transform: scale(1.1, 1.1);
   filter: drop-shadow(1px 1px 10px rgb(250, 122, 76));
 }
 
@@ -104,10 +113,11 @@ path:hover span #state-name {
   color: gold;
   border-radius: 2em;
   cursor: pointer;
+  font-family: cursive;
 }
 
 #Spring:hover {
-  transform: scale(1.05, 1.05);
+  transform: scale(1.1, 1.1);
   filter: drop-shadow(1px 1px 10px rgb(119, 172, 119));
 }
 
@@ -116,10 +126,11 @@ path:hover span #state-name {
   color: crimson;
   border-radius: 2em;
   cursor: pointer;
+  font-family: cursive;
 }
 
 #Summer:hover {
-  transform: scale(1.05, 1.05);
+  transform: scale(1.1, 1.1);
   filter: drop-shadow(1px 1px 10px rgb(252, 214, 0));
 }
 

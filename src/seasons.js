@@ -20,5 +20,4 @@ class Season {
     };
 };
 
-
     export default Season;
