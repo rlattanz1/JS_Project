@@ -28,7 +28,6 @@ class CountryMap{
         let stateId = e.target.id;
         let seasonEl = this.season.filteredItems;
         let stateEl = seasonEl[stateId];
-        // console.log(seasonEl[stateId], 'season filtered data');
         if (!stateEl) {
             alert("Please select a season and a valid state");
         } else {
