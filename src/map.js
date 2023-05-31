@@ -40,10 +40,12 @@ class CountryMap{
             elements.forEach(key => {
                 let listEl = document.createElement("li");
                 let imgEl = document.createElement("img");
+                let product_desc = document.createElement("p")
                 imgEl.src = stateEl[key][0];
-                imgEl.innerText = stateEl[key][1];
-                listEl.append(`${imgEl}`)
-                // listEl.append(`${product_desc}`);
+                imgEl.classList.add('item-img')
+                product_desc = stateEl[key][1];
+                listEl.append(imgEl)
+                listEl.append(`${product_desc}`);
                 menu.append(listEl)
             })
             console.log(menu);

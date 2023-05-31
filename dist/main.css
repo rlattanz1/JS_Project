@@ -162,14 +162,23 @@ body {
 #items {
   display: flex;
   justify-content: center;
-  margin-left: 450px;
-  margin-right: 450px;
   background-color: aliceblue;
-  height: 100%;
+  margin-top: -50px;
+  margin-left: 600px;
+  margin-right: 600px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 175px;
 }
 
 #items-list {
   display: flex;
   flex-direction: column;
-  scroll-behavior: auto;
+}
+
+.item-img {
+  display: flex;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
 }
