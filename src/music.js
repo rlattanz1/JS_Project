@@ -2,21 +2,21 @@
 class Music {
 
     constructor(song) {
-        this.song = song
-
-        this.song.addEventListener("click", this.toggleMusic.bind(this))
+        this.song = new Audio('../src/song/10-Shop.mp3');
+        this.playing = false;
+        this.toggle = document.getElementById('music-toggle')
+        this.toggle.addEventListener("click", this.toggleMusic.bind(this));
     }
 
-    toggleMusic(e) {
-
-        e.preventDefault();
-        let musicId = e.target.id
-        console.log(e, "event")
-        console.log(musicId, "music ID")
-
+    toggleMusic() {
+        if (this.playing === false) {
+            this.song.play();
+            this.playing = true;
+        } else {
+            this.song.pause();
+            this.playing = false;
+        };
     };
-
-
 }
 
 export default Music;

@@ -43,9 +43,10 @@ class CountryMap{
                 let product_desc = document.createElement("p")
                 imgEl.src = stateEl[key][0];
                 imgEl.classList.add('item-img')
-                product_desc = stateEl[key][1];
+                product_desc.classList.add('item-desc')
+                product_desc.append(`${stateEl[key][1]}`);
                 listEl.append(imgEl)
-                listEl.append(`${product_desc}`);
+                listEl.append(product_desc);
                 menu.append(listEl)
             })
             console.log(menu);
