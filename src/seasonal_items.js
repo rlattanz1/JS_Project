@@ -111,7 +111,6 @@ const seasonalItems = {
             EnglishPeas: ['https://snaped.fns.usda.gov/sites/default/files/styles/crop_ratio_7_5/public/seasonal-produce/2018-05/peas.jpg?itok=T6KM1bft', 'Peas'],
             Fennel: ['https://pcdn.columbian.com/wp-content/uploads/2019/06/0614_fea_fennel.jpg', 'Fennel'],
             Kale: ['https://snaped.fns.usda.gov/sites/default/files/styles/crop_ratio_7_5/public/seasonal-produce/2018-05/kale.jpg?itok=Zn8Cux6F', 'Kale'],
-            Kohlrabi: ['https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nydailynews.com%2Fsd-fo-get-fresh-kohlrabi-20180129-story.html&psig=AOvVaw1ZRgnxF6Z_SJ9zuu1IdM85&ust=1685660930400000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCPDvtrzWoP8CFQAAAAAdAAAAABAD', 'Kohlrabi'],
             Leeks: ['https://snaped.fns.usda.gov/sites/default/files/styles/crop_ratio_7_5/public/seasonal-produce/2018-05/leeks.jpg?itok=Y8Xlwrgp', 'Leeks'],
             Lemons: ['https://snaped.fns.usda.gov/sites/default/files/styles/crop_ratio_7_5/public/seasonal-produce/2018-05/lemons.jpg?itok=W6bdcxfq', 'Lemons'],
             Lettuce: ['https://snaped.fns.usda.gov/sites/default/files/styles/crop_ratio_7_5/public/seasonal-produce/2018-05/lettuce.jpg?itok=MvYHJXC5', 'Lettuce'],
