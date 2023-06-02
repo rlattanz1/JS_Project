@@ -2,7 +2,7 @@
 class Music {
 
     constructor() {
-        this.song = new Audio('../src/song/10-Shop.mp3'); //the path for my mp3 in my song folder
+        this.song = new Audio('../../src/song/10-Shop.mp3'); //the path for my mp3 in my song folder
         this.playing = false;
         this.song.loop=true;
         this.toggle = document.getElementById('music-toggle') //my music toggle button
