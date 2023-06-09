@@ -20,6 +20,26 @@ h1 {
     background-position: 200% center;
   }
 }
+.instructions {
+  display: flex;
+  justify-content: center;
+  margin-left: 35%;
+  margin-right: 35%;
+  border-radius: 1em;
+}
+
+.instructionLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+.instructions li {
+  list-style: number;
+  color: #ffffff;
+}
+
 .profile-links {
   display: flex;
   flex-direction: row;
