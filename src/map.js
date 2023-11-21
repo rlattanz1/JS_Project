@@ -1,6 +1,3 @@
-// import Season from "./seasons";
-// import seasonalItems from "./seasonal_items";
-
 
 class CountryMap{
 
@@ -34,7 +31,6 @@ class CountryMap{
             let menu = document.getElementById("items-list");
             menu.innerText = '';
             const itemContainer = document.getElementById("items");
-
             const elements = Object.keys(stateEl);
             elements.forEach(key => {
                 let listEl = document.createElement("li");
@@ -48,7 +44,6 @@ class CountryMap{
                 listEl.append(product_desc);
                 menu.append(listEl)
             })
-            console.log(menu);
             if (itemContainer.style.display === 'flex') {
                 itemContainer.style.display = 'none';
             } else {

@@ -22,7 +22,7 @@
   </head>
 
 
-  <body>
+<body>
 
 
       <div class="music">
@@ -480,15 +480,29 @@ sodipodi:docname="us.svg">
     style="stroke-width:0.97063118000000004;fill:#f9f9f9" />
   </svg>
 </div>
-<div class="instructions">
-    <label class="instructionLabel"> Instructions
-        <ul>
-            <li>Select your season by clicking the season button</li>
-            <li>Select your state by clicking on the state</li>
-            <li>Scroll through your valid seasonal fruits and veggetables</li>
-        </ul>
-    </label>
-  </div>
+<div class="open-btn">
+    <button id="openBtn" class="show-modal">Directions</button>
+</div>
+<div id="instructions-modal" class="modal">
+    <div class="modal-content">
+        <div class="close-modal">
+            <button id="closeBtn" class="btn-close">X</button>
+        </div>
+        <div id="modal-main" class="instructions">
+            <label class="instructionLabel">
+                <p>Instructions</p>
+                <br>
+                <ul>
+                    <li>Select your season by clicking the season button</li>
+                    <br>
+                    <li>Select your state by clicking on the state</li>
+                    <br>
+                    <li>Scroll through your valid seasonal fruits and vegetables</li>
+                </ul>
+            </label>
+        </div>
+    </div>
+</div>
 <div class="profile-links">
     <a href="https://github.com/rlattanz1"><i class="fa-brands fa-github" style="color: #f00000;"></i></a>
     <a href="https://www.linkedin.com/in/rocco-lattanzio-a8aba5a5/"><i class="fa-brands fa-linkedin" style="color: #a905f5;"></i></a>
