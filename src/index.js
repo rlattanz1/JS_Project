@@ -13,9 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById("instructions-modal");
     const openBtn = document.getElementById("openBtn");
     const closeBtn = document.getElementById("closeBtn");
+    const prodBtn = document.getElementById("prod-button");
     const itemsSeason = seasonalItems;
     const music = new Music();
     const season = new Season(filter, itemsSeason);
-    const map = new CountryMap(container, season);
+    const map = new CountryMap(container, season, prodBtn);
     const instructions = new Instructions(modal, openBtn, closeBtn);
 });

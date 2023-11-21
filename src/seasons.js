@@ -12,7 +12,6 @@ class Season {
 
     seasonFilter(e) {
         e.preventDefault();
-
         let seasonId = e.target.id;
         const seasonFilter = this.itemsSeason[seasonId];
         this.filteredItems = seasonFilter;

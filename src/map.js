@@ -1,11 +1,13 @@
 
 class CountryMap{
 
-    constructor(container, season) {
+    constructor(container, season, prodBtn) {
         this.season = season;
         this.container = container;
+        this.prodBtn = prodBtn;
         this.container.addEventListener("mouseover", this.handleMousover.bind(this));
         this.container.addEventListener("click", this.handleClick.bind(this));
+        this.prodBtn.addEventListener("click", this.closeProds.bind(this));
     };
 
     handleMousover(e) {
@@ -25,6 +27,8 @@ class CountryMap{
         let stateId = e.target.id;
         let seasonEl = this.season.filteredItems;
         let stateEl = seasonEl[stateId];
+
+
         if (!stateEl) {
             alert("Please select a season and a valid state");
         } else {
@@ -46,13 +50,23 @@ class CountryMap{
             })
             if (itemContainer.style.display === 'flex') {
                 itemContainer.style.display = 'none';
+                this.prodBtn.style.display = 'none';
             } else {
                 itemContainer.style.display = 'flex';
+                this.prodBtn.style.display = 'flex';
             };
-            return itemContainer;
+            return this.itemContainer;
         }
     };
 
+    closeProds(e) {
+        e.preventDefault();
+        const itemContainer = document.getElementById("items");
+        if (e.target.id === "prod-button") {
+            itemContainer.style.display = 'none';
+            this.prodBtn.style.display = 'none';
+        }
+    };
 };
 
 export default CountryMap;
